@@ -8,29 +8,35 @@
   <link rel="stylesheet" href="./dist/output.css">
 
 </head>
-<body>
+<body class="flex justify-center items-center min-h-screen font-Inter text-base bg-very-dark-blue text-white">
 
-  <main>
-    <h1>Get <en>insights</en> that help your business grow.</h1>
-    <p>
-      Discover the benefits of data analytics and make better decisions regarding revenue, customer
-      experience, and overall efficiency.
-    </p>
+  <main class="flex self-center w-4/5 overflow-hidden rounded-xl">
+    <section class="flex flex-col w-1/2 md:w-auto p-16 pr-24 bg-dark-desaturated-blue">
+      <h1 class="font-bold text-title mb-4">Get <en class="text-soft-violet">insights</en> that help your business grow.</h1> 
+      <p class="text-white/50 font-Deca">
+        Discover the benefits of data analytics and make better decisions regarding revenue, customer
+        experience, and overall efficiency.
+      </p>
+      <div class="flex space-x-12 mt-16">
+        <div class="flex min-h-0 flex-col">
+          <h2 class="text-numbers font-bold">10k+</h2>
+          <p class="text-white/40 uppercase font-Deca">companies</p>
+        </div>
+        <div class="flex min-h-0 flex-col">
+          <h2 class="text-numbers font-bold">314</h2>
+          <p class="text-white/40 uppercase font-Deca">templates</p>
+        </div>
+        <div class="flex min-h-0 flex-col">
+          <h2 class="text-numbers font-bold">12m+</h2>
+          <p class="text-white/40 uppercase font-Deca">queries</p>
+        </div>
+      </div>
+    </section>
 
-    <div>
-      <h2>10k+</h2>
-      <p>companies</p>
-    </div>
-    <div>
-      <h2>314</h2>
-      <p>templates</p>
-    </div>
-    <div>
-      <h2>12m+</h2>
-      <p>queries</p>
-    </div>
-
-    <div><img src="./images/image-header-desktop.jpg"></div>
+    <section class="relative">
+      <div class="absolute top-0 right-0 bottom-0 left-0 bg-purple-800 opacity-50 brightness-75 contrast-125 z-20"></div>
+      <img src="./images/image-header-desktop.jpg" class="filter grayscale hue-rotate-270 h-full">
+    </section>
   </main>
 </body>
 </html>

@@ -11,6 +11,8 @@ module.exports = {
     },
     fontSize: {
       base: '0.9375rem',
+      title: '2.2rem',
+      numbers: '1.75rem',
     },
     fontFamily: {
       'Inter': ['Inter', 'sans-serif'],
