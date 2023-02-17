@@ -8,35 +8,45 @@
   <link rel="stylesheet" href="./dist/output.css">
 
 </head>
-<body class="flex justify-center items-center min-h-screen font-Inter text-base bg-very-dark-blue text-white">
+<body class="flex justify-center items-center min-h-screen font-Inter text-mobileBase bg-very-dark-blue text-white p-5">
 
-  <main class="flex self-center w-4/5 overflow-hidden rounded-xl">
-    <section class="flex flex-col w-1/2 md:w-auto p-16 pr-24 bg-dark-desaturated-blue">
-      <h1 class="font-bold text-title mb-4">Get <en class="text-soft-violet">insights</en> that help your business grow.</h1> 
-      <p class="text-white/50 font-Deca">
+  <main class="flex self-center w-section lg:w-main overflow-hidden rounded-xl lg:flex-row flex-col-reverse max-w-md lg:max-w-none">
+    <section class="flex flex-col p-8 lg:w-section lg:h-section-h lg:p-16 lg:pr-24 bg-dark-desaturated-blue max-w-md lg:max-w-none">
+      <h1 class="font-bold text-mobileTitle leading-8 lg:leading-10 lg:text-title mb-4 text-center lg:text-left lg:mt-3 lg:mb-8">Get <en class="text-soft-violet">insights</en> that help your business grow.</h1> 
+      <p class="text-white/50 font-Deca text-center lg:text-base lg:text-left leading-6">
         Discover the benefits of data analytics and make better decisions regarding revenue, customer
         experience, and overall efficiency.
       </p>
-      <div class="flex space-x-12 mt-16">
-        <div class="flex min-h-0 flex-col">
-          <h2 class="text-numbers font-bold">10k+</h2>
+      <div class="flex lg:space-x-14 mt-8 mb-2 space-y-5 lg:mt-20 flex-col lg:flex-row items-center lg:space-y-0">
+        <div class="flex min-h-0 flex-col items-center lg:items-start">
+          <h2 class="text-mobileNumbers lg:text-numbers font-bold">10k+</h2>
           <p class="text-white/40 uppercase font-Deca">companies</p>
         </div>
-        <div class="flex min-h-0 flex-col">
-          <h2 class="text-numbers font-bold">314</h2>
+        <div class="flex min-h-0 flex-col items-center lg:items-start">
+          <h2 class="text-mobileNumbers lg:text-numbers font-bold">314</h2>
           <p class="text-white/40 uppercase font-Deca">templates</p>
         </div>
-        <div class="flex min-h-0 flex-col">
-          <h2 class="text-numbers font-bold">12m+</h2>
+        <div class="flex min-h-0 flex-col items-center lg:items-start">
+          <h2 class="text-mobileNumbers lg:text-numbers font-bold uppercase">12m+</h2>
           <p class="text-white/40 uppercase font-Deca">queries</p>
         </div>
       </div>
     </section>
 
-    <section class="relative">
+    <section class="relative overflow-hidden rounded-t-xl max-w-md lg:rounded-none lg:max-w-none lg:w-section lg:h-section-h">
       <div class="absolute top-0 right-0 bottom-0 left-0 bg-purple-800 opacity-50 brightness-75 contrast-125 z-20"></div>
-      <img src="./images/image-header-desktop.jpg" class="filter grayscale hue-rotate-270 h-full">
+      <img src="./images/image-header-mobile.jpg" class="filter grayscale hue-rotate-270 h-full w-full">
     </section>
   </main>
+
+
+  <script>
+    let img = document.querySelector('img');
+    if (window.innerWidth > 1024) {
+      img.setAttribute('src', './images/image-header-desktop.jpg');
+    } else {
+      img.setAttribute('src', './images/image-header-mobile.jpg');
+    }
+  </script>
 </body>
 </html>
