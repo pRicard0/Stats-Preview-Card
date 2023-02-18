@@ -2,6 +2,6 @@
 *.fig
 *.xd
 *.json
-node_module/git
+node_module/
 .DS_Store
 .prettierignore
