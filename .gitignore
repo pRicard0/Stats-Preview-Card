@@ -2,6 +2,5 @@
 *.fig
 *.xd
 *.json
-node_module/
 .DS_Store
 .prettierignore
